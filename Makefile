@@ -2,7 +2,7 @@ export CFLAGS = -O2 -g -Wall -DOGG_MUSIC
 export LIBS = -lGL -lGLU -lvorbisfile -lvorbis -logg
 export FE2OBJS = ../fe2.part1.o ../fe2.part2.o
 
-THIS=Makefile-C
+THIS=Makefile
 VERSION=20060623
 
 default:
