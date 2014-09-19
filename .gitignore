@@ -1,0 +1,4 @@
+*.o
+*.s.bin
+*.s.c
+frontier

@@ -6,6 +6,8 @@ SRCS = audio.c hostcall.c keymap.c main.c screen.c shortcut.c input.c
 
 OBJS = $(SRCS:.c=.o)
 
+LIBFLAGS += -lm
+
 .c.o:
 	$(CC) $(CFLAGS) $(INCFLAGS) $(SDLFLAGS) -c $<
 
@@ -17,7 +19,7 @@ clean:
 
 # Use "make depends" to generate file dependencies:
 depends: $(SRCS)
-	$(CC) -MM $(CFLAGS) $(SRCS) > Makefile.dep
+	gcc -MM $(CFLAGS) $(SRCS) > Makefile.dep
 
 ifneq (,$(wildcard Makefile.dep))
 include Makefile.dep
