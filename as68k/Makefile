@@ -1,7 +1,5 @@
 
-CC = gcc
 LIBS = 
-CFLAGS = -O2 -g -Wall
 
 OBJS = output.o output_c.o output_i386.o as68k.o dict.o
 
